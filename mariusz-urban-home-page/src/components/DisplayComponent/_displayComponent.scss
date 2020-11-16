@@ -1,0 +1,7 @@
+@import '../../sass/all.scss';
+
+.displayComponent{
+    background-color: $test-color;
+    width: calc(100vw - 240px);
+    height: calc(100vh - 240px);
+}
