@@ -1,0 +1,12 @@
+@import '../../sass/all.scss';
+
+.LangSwitchContainer{
+    button{
+        color: white;
+        background: none;
+        border: none;
+        @include font-size(0.6);
+        font-family: $font-regular;
+    }
+}
+

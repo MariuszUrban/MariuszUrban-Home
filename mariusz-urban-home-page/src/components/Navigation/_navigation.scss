@@ -1,0 +1,16 @@
+@import '../../sass/all.scss';
+
+.navContainer{
+    height: 90%;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: end;
+    ul{
+        @include font-size(0.8);
+        letter-spacing: 2px;
+        line-height: 40px;
+    }
+}
