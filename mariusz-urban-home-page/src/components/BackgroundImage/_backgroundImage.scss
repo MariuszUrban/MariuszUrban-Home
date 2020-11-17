@@ -1,0 +1,45 @@
+$books-l: url('assets/Bookshelf@2x.png');
+$books-s: url('assets/Bookshelf.png');
+$process-l: url('assets/Process@2x.png');
+$process-s: url('assets/Process.png');
+$me-l: url('assets/Me@2x.png');
+$me-s: url('assets/Me.png');
+
+
+
+.background-image-bookshelf{
+    background-image: $books-l;
+    width: 100%;
+    height: 100%;
+    z-index: -4;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: top 50%  right 100px;
+    position: absolute;
+}
+
+.background-image-process{
+    background-image: $process-l;
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: top 50% left 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.background-image-me{
+    background-image: $me-l;
+    color: transparent;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+}
