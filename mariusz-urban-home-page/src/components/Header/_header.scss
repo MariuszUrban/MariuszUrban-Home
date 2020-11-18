@@ -1,11 +1,17 @@
 @import '../../sass/all.scss';
 
-.headerContainer{
+.headerContainer-start{
     width: 100%;
-    height: 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.headerContainer-front-end{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .title{
@@ -15,7 +21,7 @@
     justify-content: flex-start;
     align-items: center;
     span{
-        @include font-size(1.7);
+        @include font-size(1.2);
         letter-spacing: 6px;
     }
 }

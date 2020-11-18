@@ -1,0 +1,38 @@
+@import "../../sass/all.scss";
+
+.tech-container{
+    height: 60%;
+    width: 45%;
+    h1{
+        height: 5%;
+        color: white;
+        margin-bottom: 10px;
+    }
+}
+
+.tech-line1{
+    display: flex;
+    justify-content: space-around;
+    height: 45%;
+}
+
+.tech-line2{
+    display: flex;
+    justify-content: space-around;
+    height: 45%;
+}
+
+.tech-element{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    img{
+        width: 30px;
+        margin-bottom: 10px;
+    }
+    span{
+        @include font-size(0.4);
+        color: white;
+    }
+}

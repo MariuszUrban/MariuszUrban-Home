@@ -4,7 +4,8 @@ $process-l: url('assets/Process@2x.png');
 $process-s: url('assets/Process.png');
 $me-l: url('assets/Me@2x.png');
 $me-s: url('assets/Me.png');
-
+$code: url('assets/Code.png');
+$dev: url('assets/Dev.png');
 
 
 .background-image-bookshelf{
@@ -41,5 +42,29 @@ $me-s: url('assets/Me.png');
     background-size: 40%;
     background-repeat: no-repeat;
     background-position: center;
+    position: absolute;
+}
+
+.background-image-code{
+    background-image: $code;
+    color: transparent;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-position: left top 50%;
+    position: absolute;
+}
+
+.background-image-dev{
+    background-image: $dev;
+    color: transparent;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: right top 50%;
     position: absolute;
 }

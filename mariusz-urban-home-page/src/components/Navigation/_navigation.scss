@@ -9,8 +9,8 @@
     align-items: center;
     text-align: end;
     ul{
-        @include font-size(0.8);
+        @include font-size(0.6);
         letter-spacing: 2px;
-        line-height: 40px;
+        line-height:30px;
     }
 }
