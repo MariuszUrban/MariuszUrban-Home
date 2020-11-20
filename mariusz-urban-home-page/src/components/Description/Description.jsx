@@ -9,19 +9,19 @@ export default function Description(props) {
     const desc = props.desc
     if(desc === 'front')
     return (
-        <div className="desc">
+        <div className="desc left">
             {FRONT}
         </div>
     )
     if(desc === 'ux')
     return (
-        <div className="desc">
+        <div className="desc right">
             {UX}
         </div>
     )
     if(desc === 'graphic')
     return (
-        <div className="desc">
+        <div className="desc-left">
             {GRAPHIC}
         </div>
     )

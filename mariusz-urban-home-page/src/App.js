@@ -70,8 +70,38 @@ function App() {
         }
      />
      </scetion>
-     <scetion className='section'>
-     <DisplayContainer />
+     <scetion className='section ux'>
+     <DisplayContainer
+     background={
+          <BackgroundContainer 
+            image1={
+              <BackgroundImage element='sky' />
+            }
+            image2={
+              <BackgroundImage element='tree' />
+            }
+            image3={
+              <BackgroundImage element='girl' />
+            }
+          />
+        }
+      text  = {
+          <TextContainer 
+          header={
+            <Header title='UI/UX Design'  style ="ux" />
+          } 
+          desc={
+            <Description desc='ux' />
+          }
+          tech={
+            <Technologies tech='ux' />
+          }
+          style="ux"
+          
+          />
+        }
+
+     />
      </scetion>
      <scetion className='section'>
      <DisplayContainer />
