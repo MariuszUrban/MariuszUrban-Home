@@ -9,6 +9,13 @@ import REDUX from './assets/redux.png';
 import NOTES from './assets/Notes.png';
 import SKETCH from './assets/sketch.png';
 import XD from './assets/adobexd@2x.png';
+import PHOTOSHOP from './assets/photoshop@2x.png';
+import ILLUSTRATOR from './assets/llustrator@2x.png';
+import INDESIGN from './assets/indesign@2x.png';
+import LIGHTROOM from './assets/lightroomclassic@2x.png';
+import BLENDER from './assets/blender_logo_no_socket_white@2x.png';
+import SKETCHUP from './assets/sk@2x.png';
+import VRAY from './assets/vr@2x.png';
 
 
 
@@ -71,6 +78,43 @@ export default function Technologies(props) {
           <div className="tech-element">
             <img src={XD} alt="" />
             <span>Adobe XD</span>
+          </div>
+        </div>
+      </div>
+    );
+  }
+  if (tech === "graphic") {
+    return (
+      <div className="tech-container">
+        <h1>Grafika</h1>
+        <div className="tech-line1">
+          <div className="tech-element">
+            <img src={PHOTOSHOP} alt="" />
+            <span>Photoshop</span>
+          </div>
+          <div className="tech-element">
+            <img src={ILLUSTRATOR} alt="" />
+            <span>Illustrator</span>
+          </div>
+          <div className="tech-element">
+            <img src={INDESIGN} alt="" />
+            <span>InDesign</span>
+          </div>
+          <div className="tech-element">
+            <img src={LIGHTROOM} alt="" />
+            <span>Lightroom</span>
+          </div>
+        </div>
+        <h1>3D</h1>
+        <div className="tech-line2">
+          <div className="tech-element threedee">
+            <img src={BLENDER} alt="" />
+          </div>
+          <div className="tech-element threedee">
+            <img src={SKETCHUP} alt="" />
+          </div>
+          <div className="tech-element threedee">
+            <img  src={VRAY} alt="" />
           </div>
         </div>
       </div>

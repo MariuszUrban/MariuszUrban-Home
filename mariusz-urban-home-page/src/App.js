@@ -103,8 +103,37 @@ function App() {
 
      />
      </scetion>
-     <scetion className='section'>
-     <DisplayContainer />
+     <scetion className='section graphic'>
+     <DisplayContainer 
+      background={
+          <BackgroundContainer 
+            image1={
+              <BackgroundImage element='threed' />
+            }
+            image2={
+              <BackgroundImage element='illustration' />
+            }
+            image3={
+              <BackgroundImage element='cosmos' />
+            }
+          />
+        }
+      text  = {
+          <TextContainer 
+          header={
+            <Header title='Grafika & 3D'  style ="graphic" />
+          } 
+          desc={
+            <Description desc='graphic' />
+          }
+          tech={
+            <Technologies tech='graphic' />
+          }
+          style="graphic"
+          
+          />
+        }
+     />
      </scetion>
      <scetion className='section'>
      <DisplayContainer />
