@@ -9,7 +9,9 @@ $dev: url('assets/Dev.png');
 $sky: url('assets/Sky@2x.png');
 $trree: url('assets/Tree@2x.png');
 $girl: url('assets/girl@2x.png');
-
+$threed: url('assets/3Dshapes@2x.png');
+$illustration: url('assets/Ilustracja@2x.png');
+$cosmos: url('assets/Cosmos@2x.png');
 
 .background-image-bookshelf{
     background-image: $books-l;
@@ -107,5 +109,41 @@ $girl: url('assets/girl@2x.png');
     background-size: 65%;
     background-repeat: no-repeat;
     background-position: left top 45%;
+    position: absolute;
+}
+
+.background-image-threed{
+    background-image: $threed;
+    color: transparent;
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: right  top;
+    position: absolute;
+}
+
+.background-image-illustration{
+    background-image: $illustration;
+    color: transparent;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: right 30px bottom;
+    position: absolute;
+}
+
+.background-image-cosmos{
+    background-image: $cosmos;
+    color: transparent;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: left top;
     position: absolute;
 }

@@ -1,7 +1,7 @@
 @import '../../sass/all.scss';
 
 .desc{
-    @include font-size(0.45);
+    @include font-size(0.1);
     color: white;
     text-align: justify;
     text-justify: inter-word;
@@ -12,6 +12,3 @@
     line-height: 15px;
 }
 
-.right{
-
-}

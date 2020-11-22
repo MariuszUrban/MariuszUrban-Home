@@ -21,7 +21,7 @@ export default function Description(props) {
     )
     if(desc === 'graphic')
     return (
-        <div className="desc-left">
+        <div className="desc left">
             {GRAPHIC}
         </div>
     )
