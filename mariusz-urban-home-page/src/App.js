@@ -135,8 +135,37 @@ function App() {
         }
      />
      </scetion>
-     <scetion className='section'>
-     <DisplayContainer />
+     <scetion className='section about'>
+     <DisplayContainer 
+     background={
+          <BackgroundContainer 
+            image1={
+              <BackgroundImage element='cloud' />
+            }
+            image2={
+              <BackgroundImage element='melek' />
+            }
+            image3={
+              <BackgroundImage element='ball' />
+            }
+            image4={
+              <BackgroundImage element='me-art' />
+            }
+          />
+        }
+      text  = {
+          <TextContainer 
+          header={
+            <Header title='O mnie '  style ="about" />
+          } 
+          desc={
+            <Description desc='about' />
+          }
+     
+          style="about"
+          
+          />
+        }/>
      </scetion>
      <scetion className='section'>
      <DisplayContainer />
