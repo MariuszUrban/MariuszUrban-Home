@@ -7,6 +7,8 @@ export default function BackgroundContainer(props) {
             {props.image1}
             {props.image2}
             {props.image3}
+            {props.image4}
+            {props.image5}
         </div>
     )
 }
