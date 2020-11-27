@@ -1,0 +1,52 @@
+@import './../../sass/all.scss';
+
+.MessageContainer{
+    width: 55%;
+    height: 70%;
+}
+
+.input-container{
+
+}
+
+.inputs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input-container{
+    background-color: #FDACB5;
+    opacity: 0.6;
+    border-radius: 20px;
+    width: 150px;
+    height: 30px;
+}
+
+.message-container{
+    background-color: #FDACB5;
+    opacity: 0.6;
+    border-radius: 20px;
+    height: 35vh;
+    margin-bottom: 10px;
+}
+
+.form-control {
+    border: none;
+    background-color: transparent;
+}
+
+.button-container{
+
+    
+}
+
+.btn-contact{
+    border: none; 
+    color: white;
+    background: transparentize($color: #FDACB5 , $amount: 0.4);
+    border-radius: 20px;
+    width: 150px;
+    height: 30px;
+}

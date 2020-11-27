@@ -8,6 +8,7 @@ import LangSwitch from './components/LangSwitch/LangSwitch';
 import Navigation from './components/Navigation/Navigation';
 import Description from './components/Description/Description';
 import Technologies from './components/Technologies/Technologies';
+import Message from './components/Message/Message'
 
 function App() {
   return (
@@ -167,8 +168,21 @@ function App() {
           />
         }/>
      </scetion>
-     <scetion className='section'>
-     <DisplayContainer />
+     <scetion className='section contact'>
+     <DisplayContainer 
+       text  = {
+          <TextContainer 
+          header={
+            <Header title='Kontakt'  style ="contact" />
+          } 
+          message = {
+            <Message />
+          }
+          style="contact"
+          
+          />
+        }
+     />
      </scetion>
     </div>
   );
