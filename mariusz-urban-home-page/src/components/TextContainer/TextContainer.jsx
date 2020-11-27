@@ -8,7 +8,8 @@ export default function TextContainer(props) {
       {props.nav}
       <div className={`TextContainer-Desc TextContainer-Desc-` + props.style}>
         {props.desc}
-        {props.tech}
+        {props.tech} 
+        {props.message}
       </div>
     </div>
   );
