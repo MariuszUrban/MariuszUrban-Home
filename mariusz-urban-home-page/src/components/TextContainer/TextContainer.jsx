@@ -10,6 +10,7 @@ export default function TextContainer(props) {
         {props.desc}
         {props.tech} 
         {props.message}
+        {props.social}
       </div>
     </div>
   );
