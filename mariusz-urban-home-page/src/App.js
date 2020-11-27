@@ -8,7 +8,8 @@ import LangSwitch from './components/LangSwitch/LangSwitch';
 import Navigation from './components/Navigation/Navigation';
 import Description from './components/Description/Description';
 import Technologies from './components/Technologies/Technologies';
-import Message from './components/Message/Message'
+import Message from './components/Message/Message';
+import SocialMedia from './components/SocialMedia/SocialMedia';
 
 function App() {
   return (
@@ -170,6 +171,19 @@ function App() {
      </scetion>
      <scetion className='section contact'>
      <DisplayContainer 
+     background={
+          <BackgroundContainer 
+            image1={
+              <BackgroundImage element='bush' />
+            }
+            image2={
+              <BackgroundImage element='env' />
+            }
+            image3={
+              <BackgroundImage element='sun' />
+            }
+          />
+        }
        text  = {
           <TextContainer 
           header={
@@ -177,6 +191,9 @@ function App() {
           } 
           message = {
             <Message />
+          }
+          social = {
+            <SocialMedia />
           }
           style="contact"
           

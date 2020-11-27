@@ -16,7 +16,9 @@ $cloud: url('assets/Cloud@2x.png');
 $melek: url('assets/Melek@2x.png');
 $ball: url('assets/Piłka@2x.png');
 $me-art: url('assets/Ja@2x.png');
-
+$bush: url('assets/Bush@2x.png');
+$env: url('assets/Envelope@2x.png');
+$sun: url('assets/Sun@2x.png');
 
 .background-image-bookshelf{
     background-image: $books-l;
@@ -198,5 +200,42 @@ $me-art: url('assets/Ja@2x.png');
     background-size: 45%;
     background-repeat: no-repeat;
     background-position: left bottom;
+    position: absolute;
+}
+
+.background-image-bush{
+    background-image: $bush;
+    color: transparent;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    position: absolute;
+}
+
+
+.background-image-env{
+    background-image: $env;
+    color: transparent;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    position: absolute;
+}
+
+.background-image-sun{
+    background-image: $sun;
+    color: transparent;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: left top 25px;
     position: absolute;
 }
