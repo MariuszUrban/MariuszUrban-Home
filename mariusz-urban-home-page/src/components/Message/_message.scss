@@ -1,12 +1,12 @@
 @import './../../sass/all.scss';
+$env: url('assets/envelope@2x.png');
+$per: url('assets/person@2x.png');
+$send: url('assets/send@2x.png');
+
 
 .MessageContainer{
     width: 55%;
     height: 70%;
-}
-
-.input-container{
-
 }
 
 .inputs{
@@ -17,19 +17,69 @@
 }
 
 .input-container{
-    background-color: #FDACB5;
-    opacity: 0.6;
+    background-color:  transparentize($color: #FDACB5 , $amount: 0.4);
     border-radius: 20px;
     width: 150px;
     height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ph-img{
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position: left 15% center;
+    width: 20%;
+    height: 100%;
+}
+
+.name-img{
+    background-image: $per;  
+}
+
+.email-img{
+    background-image: $env;  
+}
+
+.ph{
+    width: 60%;
+    outline:0px none transparent;
+    color: white;
+    font-family: $font-regular;
+    @include font-size(0.4);
+    @include inputPlaceholder() {
+        color: transparentize($color: white , $amount: 0.45);
+        text-align: left;
+
+    }
 }
 
 .message-container{
-    background-color: #FDACB5;
-    opacity: 0.6;
+    background-color: transparentize($color: #FDACB5 , $amount: 0.4);
     border-radius: 20px;
     height: 35vh;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message{
+    text-align: center;
+    resize: none;
+    height: 80%;
+    width: 80%;
+    outline:0px none transparent;
+    font-family: $font-regular;
+    color: white;
+    overflow: hidden;
+    @include font-size(0.5);
+    @include inputPlaceholder() {
+        color: transparentize($color: white , $amount: 0.45);
+        text-align: center;
+
+    }
 }
 
 .form-control {
@@ -38,8 +88,9 @@
 }
 
 .button-container{
-
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn-contact{
@@ -49,4 +100,26 @@
     border-radius: 20px;
     width: 150px;
     height: 30px;
+    outline:0px none transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .m-img{
+        background-image: $send;
+        background-repeat: no-repeat;
+        background-size: 35%;
+        background-position: center;
+        width: 20%;
+        height: 100%;
+    }
+    span{
+        width: 60%;
+        font-family: $font-regular;
+        text-align: left;
+        @include font-size(0.6)
+    }
+}
+
+.btn-contact:hover {
+    background:blue;
 }
