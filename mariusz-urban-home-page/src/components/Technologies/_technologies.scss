@@ -14,13 +14,14 @@
 .tech-line1{
     display: flex;
     justify-content: space-around;
-    height: 45%;
+    height: 35%;
 }
 
 .tech-line2{
     display: flex;
+    align-items: center;
     justify-content: space-around;
-    height: 45%;
+    height: 35%;
 }
 
 .tech-element{
@@ -39,7 +40,9 @@
 }
 
 .threedee{
+    height: fit-content;
    img{
     width: 60px;
+    
    }
 }

@@ -14,7 +14,7 @@ import SocialMedia from './components/SocialMedia/SocialMedia';
 function App() {
   return (
     <div className="App">
-     <scetion className='section start'>
+     <scetion className='section start' name="start">
       <DisplayContainer 
         background={
           <BackgroundContainer 
@@ -42,8 +42,9 @@ function App() {
         }
       />
      </scetion>
-     <scetion className='section front-end'>
+     <scetion className='section front-end' name = 'front'>
      <DisplayContainer 
+       
       background={
           <BackgroundContainer 
             image1={
@@ -72,7 +73,7 @@ function App() {
         }
      />
      </scetion>
-     <scetion className='section ux'>
+     <scetion className='section ux' name='ux'>
      <DisplayContainer
      background={
           <BackgroundContainer 
@@ -105,7 +106,7 @@ function App() {
 
      />
      </scetion>
-     <scetion className='section graphic'>
+     <scetion className='section graphic' name="graphic">
      <DisplayContainer 
       background={
           <BackgroundContainer 
@@ -137,7 +138,7 @@ function App() {
         }
      />
      </scetion>
-     <scetion className='section about'>
+     <scetion className='section about' name="about">
      <DisplayContainer 
      background={
           <BackgroundContainer 
@@ -169,7 +170,7 @@ function App() {
           />
         }/>
      </scetion>
-     <scetion className='section contact'>
+     <scetion className='section contact' name="contact">
      <DisplayContainer 
      background={
           <BackgroundContainer 

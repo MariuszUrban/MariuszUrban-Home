@@ -5,8 +5,9 @@
         color: white;
         background: none;
         border: none;
+        outline: none;
         @include font-size(0.6);
-        font-family: $font-regular;
+        font-family: $font-text;
     }
 }
 

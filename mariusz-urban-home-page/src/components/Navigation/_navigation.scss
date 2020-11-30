@@ -9,8 +9,14 @@
     align-items: center;
     text-align: end;
     ul{
+        font-family: $font-text;
+        font-weight: 500;
         @include font-size(0.6);
         letter-spacing: 2px;
         line-height:30px;
+        margin-bottom: 50px;
+    }
+    li{
+        cursor: pointer;
     }
 }
