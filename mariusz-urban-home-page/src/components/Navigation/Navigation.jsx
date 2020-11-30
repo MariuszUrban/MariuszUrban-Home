@@ -24,11 +24,6 @@ export default function Navigation() {
                   spy={true}
                   smooth={true}
                   duration={500}><li>Grafika & 3D</li></Link>
-                 <Link   
-                 activeClass="active"
-                  spy={true}
-                  smooth={true}
-                  duration={500}> <li>Portfolio</li></Link>
                   <Link   
                  activeClass="active"
                   to="about"
