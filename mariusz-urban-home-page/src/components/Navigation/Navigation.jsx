@@ -1,16 +1,46 @@
 import React from 'react';
 import './_navigation.scss';
+import {Link} from 'react-scroll'
 
 export default function Navigation() {
     return (
         <nav className="navContainer">
             <ul>
-                <li>Front-End Development</li>
-                <li>UI/UX Design</li>
-                <li>Grafika & 3D</li>
-                <li>Portfolio</li>
-                <li>O mnie</li>
-                <li>Kontakt</li>
+                <Link   
+                 activeClass="active"
+                  to="front"
+                  spy={true}
+                  smooth={true}
+                  duration={300}><li>Front-End Development</li></Link>
+                <Link   
+                 activeClass="active"
+                  to="ux"
+                  spy={true}
+                  smooth={true}
+                  duration={400}><li>UI/UX Design</li></Link>
+                 <Link   
+                 activeClass="active"
+                  to="graphic"
+                  spy={true}
+                  smooth={true}
+                  duration={500}><li>Grafika & 3D</li></Link>
+                 <Link   
+                 activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  duration={500}> <li>Portfolio</li></Link>
+                  <Link   
+                 activeClass="active"
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  duration={800}><li>O mnie</li></Link>
+                 <Link   
+                 activeClass="active"
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  duration={1000}><li>Kontakt</li></Link> 
             </ul>
         </nav>
     )
