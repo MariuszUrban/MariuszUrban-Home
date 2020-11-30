@@ -7,9 +7,9 @@
   height: 100%;
   width: 100%;
   display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .section{
@@ -18,5 +18,14 @@ flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: static;
+}
+
+.front-end{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
 }
 

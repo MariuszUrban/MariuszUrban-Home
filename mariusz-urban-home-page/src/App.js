@@ -10,7 +10,7 @@ import Description from './components/Description/Description';
 import Technologies from './components/Technologies/Technologies';
 import Message from './components/Message/Message';
 import SocialMedia from './components/SocialMedia/SocialMedia';
-
+import NavigationMoving from './components/NavigationMoving/NavigationMoving'   
 function App() {
   return (
     <div className="App">
@@ -42,6 +42,8 @@ function App() {
         }
       />
      </scetion>
+     <NavigationMoving />
+
      <scetion className='section front-end' name = 'front'>
      <DisplayContainer 
        
