@@ -1,48 +1,48 @@
 @import "../../sass/all.scss";
 
-.tech-container{
-    height: 60%;
-    width: 45%;
-    h1{
-        @include font-size(0.6);
-        height: 5%;
-        color: white;
-        margin-bottom: 10px;
-    }
+.tech-container {
+  height: 60%;
+  width: 45%;
+  h1 {
+    @include font-size(0.9);
+    height: 5%;
+    color: white;
+    margin-bottom: 10px;
+  }
 }
 
-.tech-line1{
-    display: flex;
-    justify-content: space-around;
-    height: 35%;
+.tech-line1 {
+  display: flex;
+  justify-content: space-around;
+  height: 35%;
+  margin-bottom: 30px;
 }
 
-.tech-line2{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 35%;
+.tech-line2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 35%;
 }
 
-.tech-element{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    img{
-        width: 30px;
-        margin-bottom: 10px;
-    }
-    span{
-        @include font-size(0.4);
-        color: white;
-    }
-}
-
-.threedee{
-    height: fit-content;
-   img{
+.tech-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  img {
     width: 60px;
-    
-   }
+    margin-bottom: 10px;
+  }
+  span {
+    @include font-size(0.7);
+    color: white;
+  }
+}
+
+.threedee {
+  height: fit-content;
+  img {
+    width: 130px;
+  }
 }
