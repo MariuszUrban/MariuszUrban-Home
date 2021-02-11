@@ -9,12 +9,12 @@ const NavbarBase = styled.nav`
     text-decoration: none;
     font-weight: light;
     font-size: 0.6rem;
-    padding-left: 15px;
+    padding: 5px;
     cursor: pointer;
+    border: none;
   }
 
-  line-height: 1;
-  height: 30px;
+  height: 5vh;
 
   position: fixed;
   top: 0;
@@ -36,7 +36,7 @@ const Navbar = styled(NavbarBase)`
   transition: all 200ms ${(props) => (props.show ? "ease-in" : "ease-out")};
   transform: ${(props) => (props.show ? "none" : "translate(0, -100%)")};
   .active {
-    text-decoration: underline;
+    border-bottom: solid 1px #2f2e41;
   }
 `;
 

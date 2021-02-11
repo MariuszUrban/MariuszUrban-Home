@@ -1,6 +1,8 @@
 import "./App.scss";
 import React, { useState, useRef, useEffect } from "react";
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import DisplayContainer from "./components/DisplayContainer/DisplayContainer";
 import BackgroundContainer from "./components/BackgroundContainer/BackgroundContainer";
 import BackgroundImage from "./components/BackgroundImage/BackgroundImage";
@@ -14,7 +16,10 @@ import Message from "./components/Message/Message";
 import SocialMedia from "./components/SocialMedia/SocialMedia";
 import NavBar from "./components/NavigationMoving/NavBar";
 import NavLinks from "./components/NavigationMoving/NavLinks";
+
 function App() {
+  AOS.init();
+
   //getting height of whole page
   const [appHeight, setHeight] = useState(0);
   console.log("🚀 ~ App ~ appHeight", appHeight);
@@ -61,9 +66,33 @@ function App() {
         <DisplayContainer
           background={
             <BackgroundContainer
-              image1={<BackgroundImage element="process" />}
-              image2={<BackgroundImage element="me" />}
-              image3={<BackgroundImage element="bookshelf" />}
+              image1={
+                <BackgroundImage
+                  element="process"
+                  animation="fade-right"
+                  delay="300"
+                  mirror="true"
+                  once="false"
+                />
+              }
+              image2={
+                <BackgroundImage
+                  element="me"
+                  animation="fade-up"
+                  delay="700"
+                  mirror="true"
+                  once="false"
+                />
+              }
+              image3={
+                <BackgroundImage
+                  element="bookshelf"
+                  animation="fade-left"
+                  delay="500"
+                  mirror="true"
+                  once="false"
+                />
+              }
             />
           }
           text={
@@ -88,8 +117,24 @@ function App() {
         <DisplayContainer
           background={
             <BackgroundContainer
-              image1={<BackgroundImage element="code" />}
-              image2={<BackgroundImage element="dev" />}
+              image1={
+                <BackgroundImage
+                  element="code"
+                  animation="fade-right"
+                  delay="300"
+                  mirror="true"
+                  once="false"
+                />
+              }
+              image2={
+                <BackgroundImage
+                  element="dev"
+                  animation="fade-left"
+                  delay="450"
+                  mirror="true"
+                  once="false"
+                />
+              }
             />
           }
           text={
@@ -108,9 +153,34 @@ function App() {
         <DisplayContainer
           background={
             <BackgroundContainer
-              image1={<BackgroundImage element="sky" />}
-              image2={<BackgroundImage element="tree" />}
-              image3={<BackgroundImage element="girl" />}
+              image1={
+                <BackgroundImage
+                  element="sky"
+                  animation="fade-up"
+                  delay="250"
+                  mirror="true"
+                  once="false"
+                  placement="top-center"
+                />
+              }
+              image2={
+                <BackgroundImage
+                  element="tree"
+                  animation="zoom-out-left"
+                  delay="250"
+                  mirror="true"
+                  once="false"
+                />
+              }
+              image3={
+                <BackgroundImage
+                  element="girl"
+                  animation="zoom-out-up"
+                  delay="350"
+                  mirror="true"
+                  once="false"
+                />
+              }
             />
           }
           text={
@@ -127,9 +197,33 @@ function App() {
         <DisplayContainer
           background={
             <BackgroundContainer
-              image1={<BackgroundImage element="threed" />}
-              image2={<BackgroundImage element="illustration" />}
-              image3={<BackgroundImage element="cosmos" />}
+              image1={
+                <BackgroundImage
+                  element="threed"
+                  animation="zoom-in-leftp"
+                  delay="400"
+                  mirror="true"
+                  once="false"
+                />
+              }
+              image2={
+                <BackgroundImage
+                  element="illustration"
+                  animation="fade-up-left"
+                  delay="250"
+                  mirror="true"
+                  once="false"
+                />
+              }
+              image3={
+                <BackgroundImage
+                  element="cosmos"
+                  animation="zoom-out-up"
+                  delay="350"
+                  mirror="true"
+                  once="false"
+                />
+              }
             />
           }
           text={
@@ -146,10 +240,44 @@ function App() {
         <DisplayContainer
           background={
             <BackgroundContainer
-              image1={<BackgroundImage element="cloud" />}
-              image2={<BackgroundImage element="melek" />}
-              image3={<BackgroundImage element="ball" />}
-              image4={<BackgroundImage element="me-art" />}
+              image1={
+                <BackgroundImage
+                  element="cloud"
+                  animation="fade-left"
+                  delay="250"
+                  mirror="true"
+                  once="false"
+                  placement="center-bottom"
+                />
+              }
+              image2={
+                <BackgroundImage
+                  element="melek"
+                  animation="fade-up"
+                  delay="600"
+                  mirror="true"
+                  once="false"
+                  placement="center-bottom"
+                />
+              }
+              image3={
+                <BackgroundImage
+                  element="ball"
+                  animation="fade-up-right"
+                  delay="400"
+                  mirror="true"
+                  once="false"
+                />
+              }
+              image4={
+                <BackgroundImage
+                  element="me-art"
+                  animation="flip-right"
+                  delay="300"
+                  mirror="true"
+                  once="false"
+                />
+              }
             />
           }
           text={
@@ -165,9 +293,33 @@ function App() {
         <DisplayContainer
           background={
             <BackgroundContainer
-              image1={<BackgroundImage element="bush" />}
-              image2={<BackgroundImage element="env" />}
-              image3={<BackgroundImage element="sun" />}
+              image1={
+                <BackgroundImage
+                  element="bush"
+                  animation="fade-right"
+                  delay="300"
+                  mirror="true"
+                  once="false"
+                />
+              }
+              image2={
+                <BackgroundImage
+                  element="env"
+                  animation="fade-left"
+                  delay="400"
+                  mirror="true"
+                  once="false"
+                />
+              }
+              image3={
+                <BackgroundImage
+                  element="sun"
+                  animation="fade-up"
+                  delay="200"
+                  mirror="true"
+                  once="false"
+                />
+              }
             />
           }
           text={
