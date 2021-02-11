@@ -1,52 +1,55 @@
 @import "./../../sass/all.scss";
-$in: url('assets/linkedin@2x.png');
-$git: url('assets/github@2x.png');
+$in: url("assets/linkedin@2x.png");
+$git: url("assets/github@2x.png");
 
-.SocialMediaContainer{
-    width: 25%;
-    height: 85%;
-
+.SocialMediaContainer {
+  width: 25%;
+  height: 85%;
 }
 
-.title-social{
-    height: 70px;
+.title-social {
+  height: 70px;
+  color: white;
+  text-align: center;
+  margin-bottom: 15px;
+  @include font-size(0.9);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.logotypes {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.single-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
     color: white;
-    text-align: center;
-    margin-bottom: 15px;
-    @include font-size(0.5);
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-.logotypes{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.single-social{
+    text-decoration: none;
+    @include font-size(0.8);
     display: flex;
     justify-content: center;
     align-items: center;
-    a{
-        color: white;
-        text-decoration: none;
-        @include font-size(0.3)
-    }
+    flex-direction: column;
+  }
 }
 
-.social-img{
-    height: 25px;
-    width: 25px;
-    background-size: 100%;
-    margin-bottom: 10px;
+.social-img {
+  height: 25px;
+  width: 25px;
+  background-size: 100%;
+  margin-bottom: 10px;
 }
 
-.git{
-    background-image: $git;
+.git {
+  background-image: $git;
 }
 
-.linked{
-    background-image: $in;
+.linked {
+  background-image: $in;
 }
