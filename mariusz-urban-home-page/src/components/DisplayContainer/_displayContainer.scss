@@ -1,26 +1,25 @@
-@import '../../sass/all.scss';
+@import "../../sass/all.scss";
 
-
-.displayContainer{
-    // border: solid $test-color 2px;
-    width: 90vw;
-    height: 90vh;
-    position: relative;
+.displayContainer {
+  // border: solid $test-color 2px;
+  width: 90vw;
+  height: 90vh;
+  position: relative;
 }
 
-.displayContainer-background{
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    z-index: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.displayContainer-background {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.displayContainer-text{
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    z-index: 1;
+.displayContainer-text {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 5;
 }
