@@ -14,12 +14,21 @@
 }
 
 .section {
-  width: 99vw;
+  width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   position: static;
+}
+
+.start {
+  position: relative;
+}
+
+.start-wrapper {
+  position: absolute;
+  z-index: 5;
 }
 
 .front-end {

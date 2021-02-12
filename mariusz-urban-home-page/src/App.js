@@ -4,6 +4,7 @@ import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import DisplayContainer from "./components/DisplayContainer/DisplayContainer";
+import BackgroundVideo from "./components/BackgroundVideo/BackgroundVideo";
 import BackgroundContainer from "./components/BackgroundContainer/BackgroundContainer";
 import BackgroundImage from "./components/BackgroundImage/BackgroundImage";
 import TextContainer from "./components/TextContainer/TextContainer";
@@ -22,7 +23,6 @@ function App() {
 
   //getting height of whole page
   const [appHeight, setHeight] = useState(0);
-  console.log("🚀 ~ App ~ appHeight", appHeight);
   const ref = useRef(null);
 
   useEffect(() => {
@@ -32,7 +32,6 @@ function App() {
   //getting height of first section
 
   const [firstSectionHeight, setSectionHeight] = useState(0);
-  console.log("🚀 ~ App ~ firstSectionHeight", firstSectionHeight);
 
   const refSec = useRef(null);
 
@@ -43,14 +42,12 @@ function App() {
   // checking the differrence
 
   const difference = appHeight - firstSectionHeight;
-  console.log("🚀 ~ App ~ difference", difference);
 
   // showing nav bar
   const [hideOnScroll, setHideOnScroll] = useState(false);
 
   useScrollPosition(
     ({ prevPos, currPos }) => {
-      console.log("🚀 ~ useScrollPosition ~ currPos", currPos.y);
       const isShown = currPos.y + appHeight;
       isShown <= difference ? setHideOnScroll(true) : setHideOnScroll(false);
     },
@@ -63,52 +60,56 @@ function App() {
   return (
     <div ref={ref} className="App">
       <section ref={refSec} className="section start" name="start">
-        <DisplayContainer
-          background={
-            <BackgroundContainer
-              image1={
-                <BackgroundImage
-                  element="process"
-                  animation="fade-right"
-                  delay="300"
-                  mirror="true"
-                  once="false"
-                />
-              }
-              image2={
-                <BackgroundImage
-                  element="me"
-                  animation="fade-up"
-                  delay="700"
-                  mirror="true"
-                  once="false"
-                />
-              }
-              image3={
-                <BackgroundImage
-                  element="bookshelf"
-                  animation="fade-left"
-                  delay="500"
-                  mirror="true"
-                  once="false"
-                />
-              }
-            />
-          }
-          text={
-            <TextContainer
-              header={
-                <Header
-                  title="STUDIO BOLD"
-                  lang={<LangSwitch />}
-                  style="start"
-                />
-              }
-              nav={<Navigation />}
-              style="start"
-            />
-          }
-        />
+        <BackgroundVideo />
+        <div className="start-wrapper">
+          {" "}
+          <DisplayContainer
+            background={
+              <BackgroundContainer
+                image1={
+                  <BackgroundImage
+                    element="process"
+                    animation="fade-right"
+                    delay="300"
+                    mirror="true"
+                    once="false"
+                  />
+                }
+                image2={
+                  <BackgroundImage
+                    element="me"
+                    animation="fade-up"
+                    delay="700"
+                    mirror="true"
+                    once="false"
+                  />
+                }
+                image3={
+                  <BackgroundImage
+                    element="bookshelf"
+                    animation="fade-left"
+                    delay="500"
+                    mirror="true"
+                    once="false"
+                  />
+                }
+              />
+            }
+            text={
+              <TextContainer
+                header={
+                  <Header
+                    title="URBAN DEVELOPS ;)"
+                    lang={<LangSwitch />}
+                    style="start"
+                  />
+                }
+                nav={<Navigation />}
+                style="start"
+              />
+            }
+          />
+        </div>
       </section>
       <NavBar show={hideOnScroll}>
         <NavLinks />

@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import LangSwitch from "../LangSwitch/LangSwitch";
 import { Link, animateScroll as scroll } from "react-scroll";
 // import "_navLinks.scss";
 
@@ -60,6 +61,7 @@ export default function NavigationMoving() {
       >
         Kontakt
       </Link>
+      <LangSwitch />
     </Fragment>
   );
 }
