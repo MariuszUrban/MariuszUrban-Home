@@ -13,7 +13,7 @@ const NavbarBase = styled.nav`
     cursor: pointer;
     border: none;
   }
-
+  width: 100vw;
   height: 5vh;
 
   position: fixed;

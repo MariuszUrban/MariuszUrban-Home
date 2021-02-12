@@ -1,43 +1,44 @@
-.TextContainer{
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.TextContainer {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.TextContainer-Header{
-    width: 100%;
-    height: 10%;
-    justify-content: center;
-    display: flex
+.TextContainer-Header {
+  margin-top: 45px;
+  width: 100%;
+  height: 10%;
+  justify-content: center;
+  display: flex;
 }
 
-.TextContainer-Desc{
-    width: 100%;
-    height: 90%;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
+.TextContainer-Desc {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
-.TextContainer-Desc-start{
+.TextContainer-Desc-start {
   height: 0%;
 }
 
-.TextContainer-Desc-ux{
-    justify-content: flex-end;
-    align-items: flex-end;
+.TextContainer-Desc-ux {
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
-.TextContainer-Desc-about{
-    justify-content: flex-start;
-    align-items: flex-end;
+.TextContainer-Desc-about {
+  justify-content: flex-start;
+  align-items: flex-end;
 }
 
-.TextContainer-Desc-contact{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-direction: row;
+.TextContainer-Desc-contact {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
 }
